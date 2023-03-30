@@ -52,7 +52,7 @@ void q_short(int low, int high)
 
     pivot = arr[low]                //Langkah Algoritma No. 2
 
-    i = low + 1;                //Langkah Algoritma No. 3
+        i = low + 1;                //Langkah Algoritma No. 3
     j = high;                   //Langkah Algoritma No. 4
 
 
@@ -89,6 +89,21 @@ void q_short(int low, int high)
         swap(low, j);
         mov_count++;
     }
+    //Sort the list on the right of pivot using quick sort
+    q_short(low, j - 1);                                        //Langkah Algoritma No. 12
+
+    //Sort the list on the right of pivot using quick sort 
+    q_short(j + 1, high);
+
+}
+
+void display() {
+    cout << "\n--------------------" << endl;
+    cout << "Sorted Array" << endl;
+    cout << "----------------------" << endl;
+
+    for (int i = 0; i < n; i ++)
+
 
 
 
