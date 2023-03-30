@@ -70,6 +70,14 @@ void q_short(int low, int high)
         while ((arr[j] > pivot) && (j >= low)                   //Langkah Algoritma No. 7
         {
             j--;                                                //Langkah Algoritma No. 8
+            cmp_count++;
+        }
+        cmp_count++;
+
+        // if the greather element is on the left of the element
+        if (i < j)                                              //Langkah Algoritma No. 9
+        {
+            //swap the element at index i whit the element at index j
         }
     }
 
