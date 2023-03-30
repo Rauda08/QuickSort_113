@@ -27,7 +27,7 @@ void input() {
     {
         cout << "<" << (i + 1) << ">"
             cint >> arr[i];
-    }
+    }d
 }
 
 //swaps the element st index
