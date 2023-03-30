@@ -27,10 +27,18 @@ void input() {
     {
         cout << "<" << (i + 1) << ">"
             cint >> arr[i];
-    }d
+    }
 }
 
-//swaps the element st index
+//swaps the element st index x with the element at index y
+void swap(int x, int y)
+{
+    int temp;
+
+    temp = arr[x];
+    arr[x] = arr[y];
+    arr[y] = temp; 
+}
 
 
 int main()
